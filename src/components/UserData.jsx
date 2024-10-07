@@ -7,9 +7,21 @@ const UserData =(props) => {
             <p>LastName: {props.lName}</p>     
             <p>Age: {props.age}</p>
             <button onClick={() => {
-                props.increaseAge(props.id);
+                props.increaseTheAge(props.id);
             }}>
                 Increase Age</button>     
+
+
+            <button onClick={() => {
+                props.decreaseTheAge(props.id);
+            }}>
+                Decrease Age</button> 
+
+                <br/>  <br/>
+            <button onClick={() => {
+                props.deleteTheUser(props.id);
+            }}>
+                Delete User</button>     
         </div>
     );
 }

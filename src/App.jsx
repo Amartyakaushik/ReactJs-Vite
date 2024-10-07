@@ -25,7 +25,32 @@ const increaseAge = (id) =>{
   });
 
 };
-  return (<UseStateExm users = {users} increaseAge = {increaseAge}/>
+
+const decreaseAge = (id) =>{
+  // setUsers((prevState) => prevState.filter(user => user.id !== id));
+
+  setUsers((prevState) => {
+    return (prevState).map(user => { 
+      if(user.id === id){
+        return {...user, age: user.age - 1}
+      }else{
+        return user;
+      }
+    });
+  });
+};
+
+const deleteUser = (id) => {
+  setUsers((prevState) => {
+    return (prevState).filter((user) => {
+      return (user.id !== id);
+    });
+
+    // return prevState.filter(user => user.id !== id);
+  });
+};
+
+  return (<UseStateExm users = {users} increaseThisAge = {increaseAge} decreaseThisAge = {decreaseAge} deleteThisUser = {deleteUser} />
   )
     // <>
     //   <div>
