@@ -24,6 +24,9 @@ import UpdateStateUsingObject from './State/UpdateStateUsingObject.jsx';
 // UseState examples   05 oct
 import UseStateExm from './State/useStateExamples.jsx';
 
+//Form 08 oct
+import Form from './Form/form.jsx';
+
 // function HelloWorld(){
 //   const list = [
 //     {name: 'John', age: 21, id: 1},
@@ -84,6 +87,7 @@ ReactDom.createRoot(document.getElementById('root')).render(
   <Counter/>
   <StateExampleArray/>
   <UpdateStateUsingObject/>
+  <Form />
   <App />
   </>
 

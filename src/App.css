@@ -4,7 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
+.todo-main{
+  border: 2px solid #efefef;
+  padding: 1rem;
+  margin: 1rem;
+}
 
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +45,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
